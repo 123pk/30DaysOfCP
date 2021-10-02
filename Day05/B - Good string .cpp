@@ -16,18 +16,20 @@ int main(){
 	while(t--){
 		int n;
 		cin>>n;
-        
+               
+		// c is number of string containing all '0' and d for string with all '1'
 		int c=0,d=0;
 		vector<string>P(n);
 		for(int i=0;i<n;++i){
 			cin>>P[i];
+			//checking if string have all character same
 			sort(P[i].begin(),P[i].end());
 			if(P[i][0]==P[i][P[i].size()-1]){
 				if(P[i][0]=='0')c++;
 				else d++;
 			}
 		}
-         
+                //total number of pair for array of size 'n'
 		long long ans=n;
 		ans*=(n-1);
 		ans/=2;
