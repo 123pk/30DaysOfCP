@@ -1,5 +1,8 @@
 /*
 Platform :- Leetcode
+Approach :- we start from the end what will happen if we buy stock on last day , then obviously the max profit we can make is of 0 by not buying stock on last day, for n-1th day
+            the profit becomes max( 0 ,price[n]-price[n] .. 1 based indexing) now for each of other day we will run a loop from n-2th day to 1st day and check for the some
+            jth day where we buy stock on ith day and sell it on jth day + dp[j+2] if (j+2<=n) here dp[i] gives us the max profit we can obtain from i to nth day.
 */
 class Solution {
 public:
