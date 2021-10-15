@@ -1,6 +1,5 @@
 /*
 Platform :- Leetcode
-Approach :- Recursion + Dp
 */
 class Solution {
 public:
