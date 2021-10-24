@@ -23,7 +23,7 @@ int main(){
         
         long long ans=P[1];
         long long val=P[0];
-        val=(1<<val);
+        val=(1ll<<val);
         ans*=val;
         cout<<ans<<"\n";
     }
